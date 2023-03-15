@@ -1,9 +1,11 @@
-const Xumm = async () => {
-  const headers = {
+const Xumm = async request => {
+const md = request.params.md  
+const headers = {
     'Access-Control-Allow-Origin': '*',
-    'Content-type': 'application/json'
+    'Content-type': 'application/x-www-form-urlencoded'
   }
-  return new Response("{tx: sdkfjsdkfjsdjfksdfd}", { headers })
+console.log('MD: ',md)  
+return new Response('Swarm Message Accepted', { status: 200 })
 }
 
 export default Xumm
