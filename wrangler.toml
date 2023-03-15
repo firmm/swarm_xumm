@@ -1,4 +1,10 @@
 name = "swarm_webook"
 compatibility_date = "2023-03-09"
-workers_dev = false
+workers_dev = true
+node_compat = true
 route = "swarm.firm-foundation.io/xumm*"
+account_id = "2b54191f65c4c0ba6d365dcfaaec92af"
+[[r2_buckets]]
+binding = 'MY_BUCKET'
+bucket_name = 'swarm'
+preview_bucket_name = 'devswarm'
